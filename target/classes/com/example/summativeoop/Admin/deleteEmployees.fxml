@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #868B8E;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.summativeoop.controllers.Admin.DeleteEmployeesController">
+   <Rectangle arcHeight="5.0" arcWidth="5.0" height="32.0" layoutY="-2.0" stroke="#e4a527" strokeType="INSIDE" width="800.0" />
+   <TableView layoutX="131.0" layoutY="168.0" prefHeight="240.0" prefWidth="538.35">
+      <columns>
+         <TableColumn prefWidth="75.0" text="C1" />
+         <TableColumn prefWidth="75.0" text="C2" />
+      </columns>
+   </TableView>
+   <TextField fx:id="searchEmployeeListFld" layoutX="155.0" layoutY="114.0"  prefHeight="25.0" prefWidth="367.0" />
+   <Button fx:id="returnToAdminOptionsBtn" layoutY="30.0" mnemonicParsing="false" onAction="#onReturnToAdminOptionsButtonClick" prefHeight="37.0" prefWidth="91.74" style="-fx-background-color: #E4A527;" text="Return">
+      <font>
+         <Font name="System Bold" size="13.0" />
+      </font>
+   </Button>
+   <Button fx:id="searchEmployeeListBtn" layoutX="547.0" layoutY="104.0" mnemonicParsing="false"  prefHeight="44.0" prefWidth="123.0" style="-fx-background-color: #E4A527;" text="Search">
+      <font>
+         <Font name="System Bold" size="13.0" />
+      </font>
+   </Button>
+   <Text layoutX="206.0" layoutY="80.0" stroke="#e4a527" strokeType="OUTSIDE" strokeWidth="2.0" text="Forte Athenaeum Loans" textAlignment="CENTER" wrappingWidth="389.9830722808838">
+      <font>
+         <Font name="System Bold" size="33.0" />
+      </font>
+   </Text>
+   <Button fx:id="deleteEmployeeBtn" layoutX="695.0" layoutY="286.0" mnemonicParsing="false"  style="-fx-background-color: #E4A527;" text="Delete" />
+</AnchorPane>
+
+<!--        onAction="#fillEmployeeListFld"-->
+<!--        onAction="#onSearchEmployeeListButtonClick"-->
+<!--        onAction="#onDeleteEmployeeButtonClick"-->

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #868B8E;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.summativeoop.controllers.Employee.SearchMenuController">
+   <Button fx:id="returnMainMenuBtn" layoutY="30.0" mnemonicParsing="false" onAction="#onReturnMainMenuButtonClick" prefHeight="37.0" prefWidth="161.0" style="-fx-background-color: E4A527;" text="Return to Main Menu">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font>
+   </Button>
+   <Rectangle arcHeight="5.0" arcWidth="5.0" height="32.0" layoutY="-2.0" stroke="#e4a527" strokeType="INSIDE" width="800.0" />
+   <Text layoutX="205.0" layoutY="85.0" stroke="#e4a527" strokeType="OUTSIDE" strokeWidth="2.0" text="Forte Athenaeum Loans" textAlignment="CENTER" wrappingWidth="389.9830722808838">
+      <font>
+         <Font name="System Bold" size="33.0" />
+      </font>
+   </Text>
+   <TableView fx:id="allItemsTableView" layoutX="17.0" layoutY="166.0" prefHeight="320.0" prefWidth="769.0">
+      <columns>
+         <TableColumn fx:id="bookIdColumnView" prefWidth="75.0" text="Book ID" />
+         <TableColumn fx:id="bookNameColumnView" prefWidth="107.0" text="Book Name" />
+         <TableColumn fx:id="dvdIdColumnView" prefWidth="43.0" text="Dvd ID" />
+         <TableColumn fx:id="dvdTitleColumnView" prefWidth="109.0" text="Dvd Title" />
+         <TableColumn fx:id="cdIdColumnView" prefWidth="41.0" text="Cd ID" />
+         <TableColumn fx:id="cdTitleColumnView" prefWidth="154.0" text="Cd Title" />
+         <TableColumn fx:id="instrumentIdColumnView" prefWidth="85.0" text="Instrument ID" />
+         <TableColumn fx:id="instrumentNameColumnView" prefWidth="154.0" text="Instrument Name" />
+      </columns>
+   </TableView>
+   <TextField fx:id="alltemsSearchTextField" layoutX="161.0" layoutY="113.0" prefHeight="25.0" prefWidth="477.0" promptText="Search All Items..." />
+</AnchorPane>
